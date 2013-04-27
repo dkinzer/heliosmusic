@@ -18,6 +18,8 @@ jQuery.fn.center = function() {
 
 $(window).resize(function(){
  $('img#back-ground').center();
+ $('div#main').center();
 });
 
 $('img#back-ground').center();
+$('div#main').center();

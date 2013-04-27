@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="etc/style.css">
+    <link rel="stylesheet" href="etc/colorbox-master/colorbox.css" />
   </head>
   <body>
     <div class="back-ground">
@@ -12,11 +13,11 @@
         <!-- Begin icons -->
         <div id="icons">
           <ul>
-            <li><div></div><a href="#" class="music hidetext cboxElement"></a></li>
-            <li><div></div><a href="#" class="video hidetext cboxElement"></a></li>
-            <li><div></div><a href="#" class="signup hidetext cboxElement"></a></li>
-            <li><div></div><a href="#" class="facebook hidetext cboxElement"></a></li>
-            <li><div></div><a href="#" class="twitter hidetext cboxElement"></a></li>
+            <li><div></div><a href="#" class="soundcloud"></a></li>
+            <li><div></div><a href="#" class="signup"></a></li>
+            <li><div></div><a href="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsoyhelios&amp;width=500&amp;height=395&amp;show_faces=false&amp;colorscheme=light&amp;stream=true&amp;border_color&amp;header=false" class="facebook"></a></li>
+            <li><div></div><a id="twitter-timeline" href="#twitter-widget-0" class="twitter"></a></li>
+            <li><div></div><a href="#" class="itunes"></a></li>
           </ul>
         </div>
         <div id="footer">
@@ -24,15 +25,34 @@
         <!-- Beign Share Section -->
         <div id="share">
           <ul>
-            <li><a href="https://facebook.com/soyhelios" target="_blank" title="helios on Facebook" class="facebook hidetext"></a></li>
-            <li class="last"><a href="http://twitter.com/h2theoh" target="_blank" title="helios on Twitter" class="twitter hidetext"></a></li>		    	
+            <li><a href="https://facebook.com/soyhelios" target="_blank" title="helios on Facebook" class="facebooklink"></a></li>
+            <li class="last"><a href="http://twitter.com/h2theoh" target="_blank" title="helios on Twitter" class="twitterlink hidetext"></a></li>		    	
           </ul>
         </div>
 
+        </div>
+
+        <!-- Hidden content for inline stuff -->
+        <div id="hidebag">
+          <div id="twitter-timeline">
+            <a class="twitter twitter-timeline" href="https://twitter.com/H2theOH" width="500" height="400" data-widget-id="327841178219331584"></a>
+          </div>
         </div>
       </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="etc/center.js"></script>
+    <script src="etc/colorbox-master/jquery.colorbox-min.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script language="JavaScript">
+      $(".facebook").colorbox({iframe:true, innerWidth:500, innerHeight:395});
+      var $twitter_time_line = $('iframe#twitter-timeline');
+      jQuery('div#twitter-timeline').on('onload', 'iframe', function() {
+        alert('was loaded');
+      });
+      $("a#twitter-timeline").colorbox({inline:true, innerWidth:500, innerHeight:395});
+
+    </script>
+
   </body>
 </html>

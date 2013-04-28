@@ -62,19 +62,19 @@ div#icons a {
   position : relative;
 }
 div#icons .soundcloud { background: url(../img/icon_sprite.png) no-repeat left top; }
-div#icons .signup { background: url(../img/icon_sprite.png) no-repeat -126px top; }
+div#icons .contact-form { background: url(../img/icon_sprite.png) no-repeat -126px top; }
 div#icons .facebook { background: url(../img/icon_sprite.png) no-repeat -257px top; }
 div#icons .twitter { background: url(../img/icon_sprite.png) no-repeat -385px top; }
 div#icons .itunes { background: url(../img/icon_sprite.png) no-repeat -513px top; }
 
 div#icons .soundcloud:hover { background-position: left -98px; }
-div#icons .signup:hover { background-position: -126px -98px; }
+div#icons .contact-form:hover { background-position: -126px -98px; }
 div#icons .facebook:hover { background-position: -257px -98px; }
 div#icons .twitter:hover { background-position: -385px -98px; }
 div#icons .itunes:hover { background-position: -513px -98px; }
 
 /** Share icons **/
-#share { margin: 0 49%; width: 61px; padding: 0 0 15px; }
+#share { margin: 0 75%; width: 61px; padding: 0 0 15px; }
 #share a { display: block; width: 29px; height: 29px; }
 #share ul { margin: 0; padding: 0px; overflow: hidden; }
 #share ul li { float: left; padding: 0 3px 0 0; }
@@ -91,3 +91,8 @@ div#icons .itunes:hover { background-position: -513px -98px; }
 }
 
 #hidebag { display : none; }
+
+.tweet_list li.tweet_even { background-color: #FFE1FF; !important }
+.tweet_list li.tweet_odd { background-color: #D9D9F3; !important}
+
+.pot, .hidden { display : none };

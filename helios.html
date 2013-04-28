@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="etc/style.css">
     <link rel="stylesheet" href="etc/colorbox/colorbox.css" />
     <link rel="stylesheet" href="etc\tweet/jquery.tweet.css" />
+    <link rel="stylesheet" type="text/css" href="etc/contact_form.css" media="all">
   </head>
   <body>
     <div class="back-ground">
@@ -11,34 +12,92 @@
     <div id="main">
       <div id="info">
 
-        <!-- Begin icons -->
+        <!-- Begin icons. -->
         <div id="icons">
           <ul>
             <li><div></div><a href="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F86518911&amp;color=4202ab&amp;auto_play=false&amp;show_artwork=true" class="soundcloud"></a></li>
-            <li><div></div><a href="#" class="signup"></a></li>
+            <li><div></div><a href="#contact-form" class="contact-form"></a></li>
             <li><div></div><a href="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsoyhelios&amp;width=500&amp;height=395&amp;show_faces=false&amp;colorscheme=light&amp;stream=true&amp;border_color&amp;header=false" class="facebook"></a></li>
             <li><div></div><a id="twitter-timeline" href="div#twitter-timeline" class="twitter"></a></li>
-            <li><div></div><a href="http://widgets.itunes.apple.com/widget.html?c=us&brc=FFFFFF&blc=FFFFFF&trc=FFFFFF&tlc=FFFFFF&d=&t=&m=music&e=album&w=500&h=400&ids=535362219&wt=discovery&partnerId=&affiliate_id=" class="itunes"></a></li>
+            <li><div></div><a href="http://widgets.itunes.apple.com/widget.html?c=us&brc=FFFFFF&blc=FFFFFF&trc=FFFFFF&tlc=FFFFFF&d=&t=&m=music&e=album&w=500&h=395&ids=535362219&wt=discovery&partnerId=&affiliate_id=" class="itunes"></a></li>
           
           </ul>
         </div>
+        <!-- End icons. -->
+
+        <!-- Begin footer. -->
         <div id="footer">
 
-        <!-- Beign Share Section -->
+        <!-- Beign Share Section. -->
         <div id="share">
           <ul>
             <li><a href="https://facebook.com/soyhelios" target="_blank" title="helios on Facebook" class="facebooklink"></a></li>
             <li class="last"><a href="http://twitter.com/h2theoh" target="_blank" title="helios on Twitter" class="twitterlink hidetext"></a></li>		    	
           </ul>
         </div>
+        <!-- End Share Section. -->
 
         </div>
+        <!-- End footer. -->
 
         <!-- Hidden content for inline stuff -->
         <div id="hidebag">
+
+          <!-- Begin twitter timeline. -->
           <div id="twitter-timeline">
-            <a class="twitter twitter-timeline" href="https://twitter.com/H2theOH" width="500" height="400" data-widget-id="327841178219331584"></a>
+            <a class="twitter twitter-timeline" href="https://twitter.com/H2theOH" width="500" height="395" data-widget-id="327841178219331584"></a>
           </div>
+          <!-- End twitter timeline. -->
+
+          <!-- Begin contact form. -->
+          <div id='contact-form'>
+            <img id="top" src="img/top.png" alt="">
+            <div id='form-thanks' class='pass results'>Thank you!</div>
+            <div id='form-error' class='error results'>Sorry soemthing went wrong.</div>
+            <div id="form_container">
+
+              <h1><a>Contact Form</a></h1>
+              <form id="contact-form" class="appnitro"  method="post" action="etc/contact.php">
+                <div class="form_description">
+                  <h2>Contact Form</h2>
+                  <p></p>
+                </div>						
+                <ul >
+
+                  <li id="li_2" >
+                  <label class="description" for="element_2">Name </label>
+                  <span>
+                    <input id="first" name= "first" class="element text" maxlength="255" size="8" value=""/>
+                    <label>First</label>
+                  </span>
+                  <span>
+                    <input id="last" name= "last" class="element text" maxlength="255" size="14" value=""/>
+                    <label>Last</label>
+                  </span> 
+                  </li>		<li id="li_1" >
+                  <label class="description" for="email">Email </label>
+                  <div>
+                    <input id="email" name="email" class="element text medium" type="text" maxlength="255" value=""/> 
+                  </div> 
+                  </li>		<li id="li_3" >
+                  <label class="description" for="message">Message </label>
+                  <div>
+                    <textarea id="message" name="message" class="element textarea medium"></textarea> 
+                  </div> 
+                  </li>
+
+                  <li class="buttons">
+                    <input id="element_999" name="element_999" class="element text pot" maxlength="255" size="8" value=""/>
+                  <input type="hidden" name="form_id" value="620987" />
+
+                  <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+                  </li>
+                </ul>
+              </form>	
+            </div>
+            <img id="bottom" src="img/bottom.png" alt="">
+          </div>
+          <!-- End contact form. -->
         </div>
       </div>
     </div>
@@ -46,6 +105,7 @@
     <script language="javascript" src="etc/tweet/jquery.tweet.js" type="text/javascript"></script>
     <script src="etc/center.js"></script>
     <script src="etc/colorbox/jquery.colorbox-min.js"></script>
+    <script src="etc/contact.js"></script>
     <!-- Add tweets -->
     <script type='text/javascript'>
       jQuery(function($){
@@ -60,10 +120,14 @@
     </script>
     <script language="JavaScript">
       $(".facebook").colorbox({iframe:true, innerWidth:500, innerHeight:395});
+      $(".contact-form").colorbox({
+        cbox_open: function(){
+          $('.results').hide();
+        },
+        inline:true, innerWidth:500, innerHeight:525});
       $(".soundcloud").colorbox({iframe:true, innerWidth:500, innerHeight:395});
       $(".itunes").colorbox({iframe:true, innerWidth:500, innerHeight:395});
-      $("a#twitter-timeline").colorbox({inline:true, innerWidth:500, innerHeight:395});
-
+      $("#twitter-timeline").colorbox({inline:true, innerWidth:500, innerHeight:395});
     </script>
 
   </body>

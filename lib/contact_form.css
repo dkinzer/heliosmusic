@@ -1,10 +1,13 @@
 body
 {
-	background:#CDDCEC;
 	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
 	font-size:small;
 	margin:8px 0 16px;
 	text-align:center;
+}
+
+div#contact-form { 
+	background:#CDDCEC;
 }
 
 #form_container

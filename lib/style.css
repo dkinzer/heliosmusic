@@ -1,27 +1,12 @@
 ul { list-style-type: none; }
 
-html body {
-  width : 100%;
-  height : 100%;
+body {
+  background-image: url(../img/helios.jpg);
+  background-position: center;
 }
 
 div {
   vertical-align : baseline;
-}
-
-div.back-ground {
-  top : 0;
-  height : 100%;
-  z-index : -9999;
-}
-
-div.back-ground img {
-  width : auto;
-  height : 100%;
-  top : 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 img {
@@ -94,3 +79,4 @@ div#icons .itunes:hover { background-position: -513px -98px; }
 .tweet_list li.tweet_odd { background-color: #D9D9F3; !important}
 
 .pot, .hidden { display : none };
+

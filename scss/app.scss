@@ -1,5 +1,7 @@
+@import "color";
 @import "settings";
-@import "foundation";
+@import "../bower_components/bourbon/dist/bourbon";
+@import "../bower_components/foundation/scss/foundation";
 
 // Or selectively include components
 // @import
@@ -51,4 +53,7 @@
   &:hover label {
     visibility: visible;
   }
+
+  // A green gradient using scale-colour.
+  @include background(linear-gradient(scale-color($primary-color, $lightness: 50%), $primary-color, scale-color($primary-color, $lightness: -50%)));
 }

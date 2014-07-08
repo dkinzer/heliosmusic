@@ -4,4 +4,9 @@
 // Foundation Icon Fonts
 // Path will be relative to "stylesheets" so do ../
 $fi-path: "../bower_components/foundation-icon-fonts/";
-@import "foundation-icons"
+@import "../bower_components/foundation-icon-fonts/foundation-icons";
+@import "../bower_components/bourbon/dist/bourbon";
+
+$primary-color: $brown;
+$secondary-color: $orange;
+$accent-color: $green;

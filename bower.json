@@ -4,6 +4,6 @@
   "private": "true",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "foundation-icons": "zurb/foundation-icons"
+    "foundation-icon-fonts": "zurb/foundation-icon-fonts"
   }
 }

@@ -1,2 +1,7 @@
 // The latest settings can be found here:
 // https://github.com/zurb/bower-foundation/blob/master/scss/foundation/_settings.scss
+
+// Foundation Icon Fonts
+// Path will be relative to "stylesheets" so do ../
+$fi-path: "../bower_components/foundation-icon-fonts/";
+@import "foundation-icons"

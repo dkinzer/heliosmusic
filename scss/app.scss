@@ -38,3 +38,17 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+.widget-button {
+  @include button(0, $primary-color, $button-round, true, false, false);
+  font-size: rem_calc(75);
+  label {
+    font-size: rem_calc(20);
+    color: $button-font-color;
+    visibility: hidden;
+  }
+  &:hover label {
+    visibility: visible;
+  }
+}

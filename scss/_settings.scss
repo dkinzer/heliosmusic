@@ -4,9 +4,147 @@
 // Foundation Icon Fonts
 // Path will be relative to "stylesheets" so do ../
 $fi-path: "../bower_components/foundation-icon-fonts/";
-@import "../bower_components/foundation-icon-fonts/foundation-icons";
-@import "../bower_components/bourbon/dist/bourbon";
-
 $primary-color: $brown;
 $secondary-color: $orange;
 $accent-color: $green;
+
+// Foundation.
+@import "../bower_components/foundation/scss/foundation/components/grid";
+@import "../bower_components/foundation/scss/foundation/components/block-grid";
+@import "../bower_components/foundation/scss/foundation/components/buttons";
+@import "../bower_components/foundation/scss/foundation/components/buttons";
+@import "../bower_components/foundation/scss/foundation/components/panels";
+@import "../bower_components/foundation/scss/foundation/components/reveal";
+@import "../bower_components/foundation/scss/foundation/components/forms";
+@import "../bower_components/foundation/scss/foundation/components/type";
+@import "../bower_components/foundation-icon-fonts/foundation-icons";
+
+// Bourbon.
+@import "../bower_components/bourbon/dist/helpers/linear-gradient-parser";
+@import "../bower_components/bourbon/dist/css3/background";
+@import "../bower_components/bourbon/dist/css3/linear-gradient";
+
+
+// Foundation.
+// @import "../bower_components/foundation/scss/foundation";
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+
+// Bourbon Settings.
+// @import "../bower_components/bourbon/dist/bourbon";
+
+// Settings
+// @import "settings/prefixer";
+// @import "settings/px-to-em";
+// @import "settings/asset-pipeline";
+// 
+// Custom Helpers
+// @import "helpers/convert-units";
+// @import "helpers/gradient-positions-parser";
+// @import "helpers/is-num";
+// @import "helpers/linear-angle-parser";
+// @import "helpers/linear-gradient-parser";
+// @import "helpers/linear-positions-parser";
+// @import "helpers/linear-side-corner-parser";
+// @import "helpers/radial-arg-parser";
+// @import "helpers/radial-positions-parser";
+// @import "helpers/radial-gradient-parser";
+// @import "helpers/render-gradients";
+// @import "helpers/shape-size-stripper";
+// @import "helpers/str-to-num";
+// 
+//  Custom Functions
+// @import "functions/assign";
+// @import "functions/color-lightness";
+// @import "functions/flex-grid";
+// @import "functions/golden-ratio";
+// @import "functions/grid-width";
+// @import "functions/modular-scale";
+// @import "functions/px-to-em";
+// @import "functions/px-to-rem";
+// @import "functions/strip-units";
+// @import "functions/tint-shade";
+// @import "functions/transition-property-name";
+// @import "functions/unpack";
+// 
+//  CSS3 Mixins
+// @import "css3/animation";
+// @import "css3/appearance";
+// @import "css3/backface-visibility";
+// @import "css3/background-image";
+// @import "css3/background";
+// @import "css3/border-image";
+// @import "css3/border-radius";
+// @import "css3/box-sizing";
+// @import "css3/calc";
+// @import "css3/columns";
+// @import "css3/filter";
+// @import "css3/flex-box";
+// @import "css3/font-face";
+// @import "css3/font-feature-settings";
+// @import "css3/hyphens";
+// @import "css3/hidpi-media-query";
+// @import "css3/image-rendering";
+// @import "css3/keyframes";
+// @import "css3/linear-gradient";
+// @import "css3/perspective";
+// @import "css3/radial-gradient";
+// @import "css3/transform";
+// @import "css3/transition";
+// @import "css3/user-select";
+// @import "css3/placeholder";
+// 
+//  Addons & other mixins
+// @import "addons/button";
+// @import "addons/clearfix";
+// @import "addons/directional-values";
+// @import "addons/ellipsis";
+// @import "addons/font-family";
+// @import "addons/hide-text";
+// @import "addons/html5-input-types";
+// @import "addons/position";
+// @import "addons/prefixer";
+// @import "addons/retina-image";
+// @import "addons/size";
+// @import "addons/timing-functions";
+// @import "addons/triangle";
+// @import "addons/word-wrap";
+// 
+//  Soon to be deprecated Mixins
+// @import "bourbon-deprecated-upcoming";

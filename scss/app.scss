@@ -41,6 +41,16 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+.title-left {
+  color: $primary-color;
+  letter-spacing: 3px;
+  text-shadow: rgba(0, 0, 0, .4) 0 1px 1px;
+}
+
+.title-right {
+  @extend .title-left;
+  color: $secondary-color;
+}
 
 .widget-button {
   @include button(0, $primary-color, $button-round, true, false, false);
@@ -54,8 +64,6 @@
     visibility: visible;
   }
 
-  // A green gradient using scale-colour.
-  @include background(linear-gradient(scale-color($primary-color, $lightness: 50%), $primary-color, scale-color($primary-color, $lightness: -50%)));
 }
 
 body {

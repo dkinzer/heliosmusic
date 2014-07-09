@@ -11,26 +11,77 @@
   <body>
     <div class="row">
       <div class="small-8 small-centered columns">
-        <h1 class='text-center'>HELIOSGONZALEZ</h1>
+        <h1 class='text-center'><span class="title-left">HELIOS</span><span class="title-right">GONZALEZ</span></h1>
       </div>
     </div>
     <div class="row">
-      <div class="small-8 small-centered columns text-cetner">
+      <div class="small-8 small-centered columns text-center">
         <img src='img/helios.png' alt="Helios Gonzalez"/>
       </div>
     </div>
-    <div class="row">
-      <div class="small-8 small-centered columns">
-        <ul class="small-block-grid-5">
-          <li><a href="#" class="widget-button"><i class="fi-cloud"><label>SounCloud</label></i></a></li>
-          <li><a href="#" class="widget-button"><i class="fi-mail"><label>Contact</label></i></a></li>
-          <li><a href="#" class="widget-button"><i class="fi-social-facebook"><label>Facebook</label></i></a></li>
-          <li><a href="#" class="widget-button"><i class="fi-social-twitter"><label>Twitter</label></i></a></li>
-          <li><a href="#" class="widget-button radius round"><i class="fi-social-apple"><label>iTunes</label></i></a></li>
-        </ul>
+
+    <!-- Begin Soundcloud Modal. -->
+    <div id="soundcloudModal" class="reveal-modal"></div>
+    <!-- End twitter timeline. -->
+
+    <!-- Begin contact form. -->
+    <div id='contactFormModal' class="reveal-modal" data-reveal>
+      <img id="top" src="img/top.png" alt="">
+      <div id="form_container">
+        <form id="contact-form" class="appnitro"  method="post" action="lib/contact.php">
+          <div class="form_description">
+            <h2>Contact Form</h2>
+            <p></p>
+          </div>						
+          <ul >
+            <li id="li_2" >
+            <label class="description" for="element_2">Name </label>
+            <span>
+              <input id="first" name= "first" class="element text" maxlength="255" size="8" value=""/>
+              <label>First</label>
+            </span>
+            <span>
+              <input id="last" name= "last" class="element text" maxlength="255" size="14" value=""/>
+              <label>Last</label>
+            </span> 
+            </li>		<li id="li_1" >
+            <label class="description" for="email">Email </label>
+            <div>
+              <input id="email" name="email" class="element text medium" type="text" maxlength="255" value=""/> 
+            </div> 
+            </li>		<li id="li_3" >
+            <label class="description" for="message">Message </label>
+            <div>
+              <textarea id="message" name="message" class="element textarea medium"></textarea> 
+            </div> 
+            </li>
+
+            <li class="buttons">
+            <input id="element_999" name="element_999" class="element text pot" maxlength="255" size="8" value=""/>
+            <input type="hidden" name="form_id" value="620987" />
+
+            <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+            </li>
+          </ul>
+        </form>	
+      </div>
+      <img id="bottom" src="img/bottom.png" alt="">
+    </div>
+    <!-- End contact form. -->
+
+    <div class="panel">
+      <div class="row">
+        <div class="small-8 small-centered columns">
+          <ul class="small-block-grid-5">
+            <li><a href="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F10473282&amp;color=3d00a8&amp;auto_play=false&amp;show_artwork=true" class="widget-button" data-reveal-id="soundcloudModal"  data-reveal-ajax="true"><i class="fi-cloud"></i></a></li>
+            <li><a href="#" data-reveal-id="contactFormModal" class="widget-button"><i class="fi-mail"></i></a></li>
+            <li><a href="#" class="widget-button"><i class="fi-social-facebook"></i></a></li>
+            <li><a href="#" class="widget-button"><i class="fi-social-twitter"></i></a></li>
+            <li><a href="#" class="widget-button radius round"><i class="fi-social-apple"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>

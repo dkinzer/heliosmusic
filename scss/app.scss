@@ -44,9 +44,9 @@
 
 .widget-button {
   @include button(0, $primary-color, $button-round, true, false, false);
-  font-size: rem_calc(75);
+  font-size: 200%;
   label {
-    font-size: rem_calc(20);
+    font-size: 50%;
     color: $button-font-color;
     visibility: hidden;
   }
@@ -56,4 +56,8 @@
 
   // A green gradient using scale-colour.
   @include background(linear-gradient(scale-color($primary-color, $lightness: 50%), $primary-color, scale-color($primary-color, $lightness: -50%)));
+}
+
+body {
+  @include background(linear-gradient(scale-color($secondary-color, $lightness: 90%), scale-color($secondary-color, $lightness: -50%)));
 }

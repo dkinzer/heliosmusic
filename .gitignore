@@ -4,3 +4,5 @@
 /stylesheets/*
 *.css
 *.swo
+*.swp
+*.tgz

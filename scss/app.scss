@@ -15,9 +15,10 @@
 .widget-button {
   @include button(0, $primary-color, $button-round, true, false, false);
   font-size: 200%;
-  h2 {
+  label {
     color: $button-font-color;
   }
+
 }
 
 .tinted-background {

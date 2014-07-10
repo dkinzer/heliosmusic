@@ -15,15 +15,9 @@
 .widget-button {
   @include button(0, $primary-color, $button-round, true, false, false);
   font-size: 200%;
-  label {
-    font-size: 50%;
+  h2 {
     color: $button-font-color;
-    visibility: hidden;
   }
-  &:hover label {
-    visibility: visible;
-  }
-
 }
 
 .tinted-background {

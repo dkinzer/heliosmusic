@@ -7,7 +7,7 @@ else
   PREFIX=--transform 's,^\.,www,'
 fi
 
-
+touch heliosmusic.tgz
 tar --exclude='.git*' \
   --exclude='.sass-cache*' \
   --exclude='bower.json' \

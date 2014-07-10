@@ -16,7 +16,7 @@
     </div>
     <div class="row">
       <div class="small-8 small-centered columns text-center">
-        <img src='img/helios.png' alt="Helios Gonzalez"/>
+        <img src="img/helios.png" alt="Helios Gonzalez"/>
       </div>
     </div>
 
@@ -25,44 +25,52 @@
     <!-- End twitter timeline. -->
 
     <!-- Begin contact form. -->
-    <div id='contactFormModal' class="reveal-modal" data-reveal>
+    <div id="contactFormModal" class="reveal-modal" data-reveal>
       <div id="form_container">
         <form id="contact-form" method="post" action="lib/contact.php">
           <div class="form_description">
-            <h2>Contact Form</h2>
+            <h2 class="title-right">Contact Form</h2>
             <br/>
-          </div>						
-          <ul >
-            <li id="li_2" >
-            <label class="description" for="element_2">Name </label>
-            <span>
-              <input id="first" name= "first" class="element text" maxlength="255" size="8" value=""/>
-              <label>First</label>
-            </span>
-            <span>
-              <input id="last" name= "last" class="element text" maxlength="255" size="14" value=""/>
-              <label>Last</label>
-            </span> 
-            </li>		<li id="li_1" >
-            <label class="description" for="email">Email </label>
-            <div>
-              <input id="email" name="email" class="element text medium" type="text" maxlength="255" value=""/> 
-            </div> 
-            </li>		<li id="li_3" >
-            <label class="description" for="message">Message </label>
-            <div>
-              <textarea id="message" name="message" class="element textarea medium"></textarea> 
-            </div> 
-            </li>
+          </div>
 
-            <li class="buttons">
-            <input id="element_999" name="element_999" class="element text pot" maxlength="255" size="8" value=""/>
-            <input type="hidden" name="form_id" value="620987" />
+          <div class="panel">
+            <div class="row">
+              <div class="large-4 columns">
+                <label>First
+                  <input id="first" name= "first" />
+                </label>
+              </div>
+              <div class="large-4 columns">
+                <label>Last
+                  <input id="last" name= "last" />
+                </label>
+              </div>
+              <div class="large-4 columns"></div>
+            </div>
 
-            <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
-            </li>
-          </ul>
-        </form>	
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Email
+                  <input id="email" name= "email"/>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Message
+              </label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-12 columns">
+              <input id="saveForm" class="button radius round" type="submit" name="submit" value="Submit" />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <!-- End contact form. -->

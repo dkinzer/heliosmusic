@@ -1,12 +1,5 @@
 #!/usr/bin/sh
 
-if [ "$(uname)" == "Darwin"];
-then
-  PREFIX=-s /^\./www/g
-else
-  PREFIX=--transform 's,^\.,www,'
-fi
-
 touch heliosmusic.tgz
 tar --exclude='.git*' \
   --exclude='.sass-cache*' \
@@ -16,4 +9,4 @@ tar --exclude='.git*' \
   --exclude='Gemfile*' \
   --exclude='Makefile' \
   --exclude='heliosmusic.tgz' \
-  $PREFIX -czvf heliosmusic.tgz .
+  -czvf heliosmusic.tgz .

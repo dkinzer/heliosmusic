@@ -12,4 +12,5 @@ archive:
 		--exclude='*.swp' \
 		--exclude='Gemfile*' \
 		--exclude='Makefile' \
-		-s /^\./www/g -czvf heliosmusic.tgz .
+		--exclude='heliosmusic.tgz' \
+		--transform 's,^\.,www,' -czvf heliosmusic.tgz .

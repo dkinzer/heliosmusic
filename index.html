@@ -21,57 +21,58 @@
     </div>
 
     <!-- Begin Soundcloud Modal. -->
-    <div id="soundcloudModal" class="reveal-modal"></div>
+    <div id="soundcloudModal" class="reveal-modal">
+      <iframe src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F10473282&amp;color=3d00a8&amp;auto_play=false&amp;show_artwork=true">
+      </iframe>
+    </div>
     <!-- End twitter timeline. -->
 
     <!-- Begin contact form. -->
     <div id="contactFormModal" class="reveal-modal tinted-background" data-reveal>
-      <div id="form_container">
-        <form id="contact-form" method="post" action="lib/contact.php">
-          <div class="form_description">
-            <h2 class="prime-word">Contact Form</h2>
-            <br/>
-          </div>
+      <form id="contact-form" method="post" action="lib/contact.php">
+        <div class="form_description">
+          <h2 class="prime-word">Contact Form</h2>
+          <br/>
+        </div>
 
-          <div class="panel">
-            <div class="row">
-              <div class="large-4 columns">
-                <label>First
-                  <input id="first" name= "first" />
-                </label>
-              </div>
-              <div class="large-4 columns">
-                <label>Last
-                  <input id="last" name= "last" />
-                </label>
-              </div>
-              <div class="large-4 columns"></div>
-            </div>
-
-            <div class="row">
-              <div class="large-12 columns">
-                <label>Email
-                  <input id="email" name= "email"/>
-                </label>
-              </div>
-            </div>
-          </div>
-
+        <div class="panel">
           <div class="row">
-            <div class="large-12 columns">
-              <label>Message
+            <div class="large-4 columns">
+              <label>First
+                <input id="first" name= "first" />
               </label>
-              <textarea id="message" name="message"></textarea>
             </div>
+            <div class="large-4 columns">
+              <label>Last
+                <input id="last" name= "last" />
+              </label>
+            </div>
+            <div class="large-4 columns"></div>
           </div>
 
           <div class="row">
             <div class="large-12 columns">
-              <input id="saveForm" class="button radius round" type="submit" name="submit" value="Submit" />
+              <label>Email
+                <input id="email" name= "email"/>
+              </label>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Message
+            </label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <input id="saveForm" class="button radius round" type="submit" name="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
     </div>
     <!-- End contact form. -->
 

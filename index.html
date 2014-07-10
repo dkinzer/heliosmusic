@@ -20,12 +20,67 @@
       </div>
     </div>
 
-    <!-- Begin Soundcloud Modal. -->
-    <div id="soundcloudModal" class="reveal-modal">
-      <iframe src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F10473282&amp;color=3d00a8&amp;auto_play=false&amp;show_artwork=true">
-      </iframe>
+    <div class="panel">
+      <div class="row">
+        <div class="small-8 small-centered columns">
+          <ul class="small-block-grid-5">
+            <li><a href="#" class="widget-button" data-reveal-id="soundcloudModal"> <i class="fi-social-soundcloud"></i></a></li>
+            <li><a href="#" class="widget-button" data-reveal-id="contactFormModal"> <i class="fi-mail"></i></a></li>
+            <li><a href="#" class="widget-button" data-reveal-id="facebookModal"> <i class="fi-social-facebook"></i></a></li>
+            <li><a href="#" class="widget-button" data-reveal-id="twitterModal"> <i class="fi-social-twitter"></i></a></li>
+            <li><a href="#" class="widget-button" data-reveal-id="itunesModal"> <i class="fi-social-apple"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- End twitter timeline. -->
+    
+    <!-- Begin Soundcloud Modal. -->
+    <div id="soundcloudModal" class="reveal-modal tinted-background" data-reveal>
+      <div class="row">
+        <div class="small-8 small-centered columns text-center">
+          <iframe src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F10473282&amp;color=3d00a8&amp;auto_play=false&amp;show_artwork=true" width="100%" height="395">
+          </iframe>
+        </div>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <!-- End Soundcloud Modal. -->
+
+    <!-- Begin Facebook Modal. -->
+    <div id="facebookModal" class="reveal-modal tinted-background" data-reveal>
+      <div class="row">
+        <div class="small-8 small-centered columns text-center">
+          <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsoyhelios&amp;width=500&amp;height=395&amp;show_faces=false&amp;colorscheme=light&amp;stream=true&amp;border_color&amp;header=false" width="100%" height="395">
+          </iframe>
+        </div>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <!-- End Facebook Modal. -->
+
+    <!-- Begin Twitter Modal. -->
+    <div id="twitterModal" class="reveal-modal tinted-background" data-reveal>
+      <div class="row">
+        <div class="small-8 small-centered columns text-center">
+          <iframe src="http://widgets.itunes.apple.com/widget.html?c=us&amp;brc=FFFFFF&amp;blc=FFFFFF&amp;trc=FFFFFF&amp;tlc=FFFFFF&amp;d=&amp;t=&amp;m=music&amp;e=album&amp;w=500&amp;h=395&amp;ids=535362219&amp;wt=discovery&amp;partnerId=&amp;affiliate_id=" width="500" height="395">
+          </iframe>
+        </div>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <!-- End Twitter Modal. -->
+
+    <!-- Begin iTunes Modal. -->
+    <div id="itunesModal" class="reveal-modal tinted-background" data-reveal>
+      <div class="row">
+        <div class="small-8 small-centered columns text-center">
+          <iframe src="http://widgets.itunes.apple.com/widget.html?c=us&brc=FFFFFF&blc=FFFFFF&trc=FFFFFF&tlc=FFFFFF&d=&t=&m=music&e=album&w=500&h=395&ids=535362219&wt=discovery&partnerId=&affiliate_id=" width="500" height="395">
+          </iframe>
+        </div>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <!-- End iTunes Modal. -->
 
     <!-- Begin contact form. -->
     <div id="contactFormModal" class="reveal-modal tinted-background" data-reveal>
@@ -73,22 +128,10 @@
           </div>
         </div>
       </form>
+      <a class="close-reveal-modal">&#215;</a>
     </div>
     <!-- End contact form. -->
 
-    <div class="panel">
-      <div class="row">
-        <div class="small-8 small-centered columns">
-          <ul class="small-block-grid-5">
-            <li><a href="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F10473282&amp;color=3d00a8&amp;auto_play=false&amp;show_artwork=true" class="widget-button" data-reveal-id="soundcloudModal"  data-reveal-ajax="true"><i class="fi-social-soundcloud"></i></a></li>
-            <li><a href="#" data-reveal-id="contactFormModal" class="widget-button"><i class="fi-mail"></i></a></li>
-            <li><a href="#" class="widget-button"><i class="fi-social-facebook"></i></a></li>
-            <li><a href="#" class="widget-button"><i class="fi-social-twitter"></i></a></li>
-            <li><a href="#" class="widget-button radius round"><i class="fi-social-apple"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>

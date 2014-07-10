@@ -1,14 +1,14 @@
 @import "color";
 @import "settings";
 
-.title-left {
+.prime-word {
   color: $primary-color;
   letter-spacing: 3px;
   text-shadow: rgba(0, 0, 0, .4) 0 1px 1px;
 }
 
-.title-right {
-  @extend .title-left;
+.secondary-word {
+  @extend .prime-word;
   color: $secondary-color;
 }
 
@@ -26,6 +26,6 @@
 
 }
 
-body {
+.tinted-background {
   @include background(linear-gradient(scale-color($secondary-color, $lightness: 90%), scale-color($secondary-color, $lightness: -50%)));
 }

@@ -1,4 +1,4 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
+/* Helios Gonzalez @H2theOH*/
 /* heliosmusic.com */
 /* humanstxt.org */
 

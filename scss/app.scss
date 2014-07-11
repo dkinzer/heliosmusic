@@ -22,5 +22,5 @@
 }
 
 .tinted-background {
-  @include background(linear-gradient(scale-color($secondary-color, $lightness: 90%), scale-color($secondary-color, $lightness: -50%)));
+  @include background(linear-gradient(scale-color($secondary-color, $lightness: 50%), $secondary-color, scale-color($secondary-color, $lightness: -50%)));
 }

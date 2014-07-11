@@ -10,7 +10,9 @@ echo "*     BEGIN DEPLOY      *"
 echo "*************************"
 
 scp $PROJECT $USER@$HOST:$PROJECT
-ssh $USER@$HOST "tar xvf $PROJECT -C www && rm $PROJECT"
+ssh $USER@$HOST "tar xvf $PROJECT -C www \
+  && rm $PROJECT \
+  && chmod 755 -R www"
 
 echo "**************************"
 echo "*   SUCESS: DEPLOYED !!! *"

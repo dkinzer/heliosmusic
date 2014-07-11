@@ -9,4 +9,5 @@ tar --exclude='.git*' \
   --exclude='Gemfile*' \
   --exclude='Makefile' \
   --exclude='heliosmusic.tgz' \
+  --exclude='bin*' \
   -czvf heliosmusic.tgz .

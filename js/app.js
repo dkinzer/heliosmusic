@@ -3,7 +3,7 @@
 $(document).foundation();
 
 $('.results').hide();
-$('#contactFormModal').submit(function(e){
+$('#contact-form').submit(function(e){
   e.preventDefault();
   $.ajax({
     type : 'POST',

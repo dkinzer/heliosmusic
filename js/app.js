@@ -2,6 +2,7 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 
+// {{{1 Contact Form Modal
 $('.results').hide();
 $('#contact-form').submit(function(e){
   e.preventDefault();
@@ -13,6 +14,7 @@ $('#contact-form').submit(function(e){
     success : function(msg) {
       $('#contact-form-error').hide();
       $('#contac-form-thanks').show();
+      $('form#contact-form').hide();
       console.log(msg);
     },
     error : function(error) {
@@ -24,7 +26,7 @@ $('#contact-form').submit(function(e){
   return false;
 });
 
-
+// {{{1 ITunes Modal
 $(function(){
   var width = (function(){
     if (matchMedia(Foundation.media_queries.large).matches) {

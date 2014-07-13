@@ -1,14 +1,19 @@
 // The latest settings can be found here:
 // https://github.com/zurb/bower-foundation/blob/master/scss/foundation/_settings.scss
 
-// Foundation Icon Fonts
-// Path will be relative to "stylesheets" so do ../
-$fi-path: "../bower_components/foundation-icon-fonts";
+// {{{1 Variables
 $primary-color: $brown;
 $secondary-color: $orange;
+$tertiary-color: $red;
 $accent-color: $green;
 
-// Foundation.
+// {{{1 Overrides
+$fi-path: "../bower_components/foundation-icon-fonts";
+$panel-bg: scale-color($red, $lightness: -5%);
+
+
+// {{{1 Includes
+// {{{2 Foundation.
 @import "../bower_components/foundation/scss/foundation/components/grid";
 @import "../bower_components/foundation/scss/foundation/components/block-grid";
 @import "../bower_components/foundation/scss/foundation/components/buttons";
@@ -20,13 +25,13 @@ $accent-color: $green;
 @import "../bower_components/foundation/scss/foundation/components/alert-boxes";
 @import "../bower_components/foundation-icon-fonts/foundation-icons";
 
-// Bourbon.
+// {{{2 Bourbon.
 @import "../bower_components/bourbon/dist/helpers/linear-gradient-parser";
 @import "../bower_components/bourbon/dist/css3/background";
 @import "../bower_components/bourbon/dist/css3/linear-gradient";
 
-
-// {{{1 Foundation Components.
+// {{{1 Defaults
+// {{{2 Foundation Components.
 // @import "../bower_components/foundation/scss/foundation";
 // Or selectively include components
 // @import
@@ -67,7 +72,7 @@ $accent-color: $green;
 //   "foundation/components/visibility";
 
 
-// {{{1  Bourbon Settings and Components
+// {{{2  Bourbon Settings and Components
 // @import "../bower_components/bourbon/dist/bourbon";
 
 // Settings

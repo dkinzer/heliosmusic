@@ -3,27 +3,30 @@
 $(document).foundation();
 
 // {{{1 Contact Form Modal
-$('.results').hide();
-$('#contact-form').submit(function(e){
-  e.preventDefault();
-  $.ajax({
-    type : 'POST',
-    cache : false,
-    url : "lib/contact.php",
-    data : 'id=contact_form'+$(this).serialize(),
-    success : function(msg) {
-      $('#contact-form-error').hide();
-      $('#contac-form-thanks').show();
-      $('form#contact-form').hide();
-      console.log(msg);
-    },
-    error : function(error) {
-      $('#form-thanks').hide();
-      $('#form-error').show();
-      console.log(error);
-    }
+$(function(){
+  $('#contact-form-success').hide();
+  $('#contact-form-error').hide();
+  $('#contact-form').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+      type : 'POST',
+      cache : false,
+      url : "lib/contact.php",
+      data : 'id=contact_form'+$(this).serialize(),
+      success : function(msg) {
+        $('#contact-form-success').show();
+        $('#contact-form-error').hide();
+        $('#contact-form').hide();
+        console.log(msg);
+      },
+      error : function(error) {
+        $('#contact-form-success').hide();
+        $('#contact-form-error').show();
+        console.log(error);
+      }
+    });
+    return false;
   });
-  return false;
 });
 
 // {{{1 ITunes Modal

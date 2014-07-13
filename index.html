@@ -87,15 +87,20 @@
 
     <!--{{{1 Contact Form Modal. -->
     <div id="contactFormModal" class="reveal-modal tinted-background" data-reveal>
+
+      <div id="contact-form-error" data-alert class="alert-box alert round">
+        Sory, but the message could not be delivered.
+      </div>
+
+      <div id="contact-form-success" data-alert class="alert-box success round">
+        Thank you for the message!
+      </div>
+
       <form id="contact-form" method="post" action="lib/contact.php">
-        <div class="form_description">
-          <h2 class="prime-word">Contact Form</h2>
-          <br/>
-        </div>
+
+        <h2>Contact Form</h2>
 
         <div class="panel">
-          <div class="row results">
-          </div>
           <div class="row">
             <div class="large-4 columns">
               <label>First

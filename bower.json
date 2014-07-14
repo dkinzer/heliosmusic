@@ -5,6 +5,5 @@
   "dependencies": {
     "foundation": "zurb/bower-foundation",
     "foundation-icon-fonts": "dkinzer/foundation-icon-fonts#add-soundcloud-icon",
-    "bourbon": "4.0.2"
   }
 }

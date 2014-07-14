@@ -21,6 +21,6 @@
 
 }
 
-.tinted-background {
+body, .tinted-background {
   @include background(linear-gradient(scale-color($secondary-color, $lightness: 50%), $secondary-color, scale-color($secondary-color, $lightness: -50%)));
 }

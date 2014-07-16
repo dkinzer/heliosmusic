@@ -18,10 +18,10 @@ update:
 	bundle update
 
 watch:
-	sass --watch scss/
+	compass watch
 
 compile:
-	sass --update scss/
+	compass compile
 
 deploy: compile archive
 	bash ./bin/deploy.sh

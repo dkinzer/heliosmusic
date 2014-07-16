@@ -27,7 +27,23 @@ body, .tinted-background {
 }
 
 body {
-  @media only screen and (max-width: 40em) { 
+  @media only screen and (max-width: 40em) {
     h1 { font-size: 125%; }
+  }
+}
+
+.widget {
+  // small-10 small-centered medium-5 medium-centered columns text-center
+  @media #{$small-only} and (orientation: portrait) {
+    @include grid-column(10);
+  }
+  @media #{$small-only} and (orientation: landscape) {
+  @include grid-column(5);
+  }
+  @media #{$medium-up} and (orientation: landscape) {
+    @include grid-column(5);
+  }
+  @media #{$medium-up} and (orientation: portrait) {
+    @include grid-column(10);
   }
 }

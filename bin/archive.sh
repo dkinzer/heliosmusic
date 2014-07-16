@@ -10,4 +10,5 @@ tar --exclude='.git*' \
   --exclude='Makefile' \
   --exclude='heliosmusic.tgz' \
   --exclude='bin*' \
+  --exclude='config.rb' \
   -czvf heliosmusic.tgz .
